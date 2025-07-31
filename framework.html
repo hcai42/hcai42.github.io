@@ -160,6 +160,30 @@
                 <h2 class="text-3xl font-bold text-[#0d47a1]">The Interactive Value Bridge</h2>
                 <p class="text-lg text-gray-600 mt-2">Connect business needs to technical implementation with AI.</p>
             </div>
+            
+            <!-- API Configuration Section -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-6 max-w-2xl mx-auto">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-[#0d47a1]">🔐 API Configuration</h3>
+                    <button id="toggleApiConfig" class="text-sm text-[#1976d2] hover:underline">Configure</button>
+                </div>
+                <div id="apiConfigSection" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">N8N API Key (Optional)</label>
+                            <input id="n8nApiKey" type="password" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#1976d2] focus:border-transparent text-sm" placeholder="Enter your n8n API key">
+                        </div>
+                        <div class="flex items-end">
+                            <div class="flex gap-2">
+                                <button id="saveApiConfig" class="px-4 py-2 bg-[#1976d2] text-white rounded text-sm hover:bg-[#0d47a1]">Save</button>
+                                <button id="clearApiConfig" class="px-4 py-2 bg-gray-500 text-white rounded text-sm hover:bg-gray-600">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">⚠️ API key is stored only in memory for this session. Not saved permanently.</p>
+                </div>
+            </div>
+            
             <div class="bg-white p-6 rounded-lg shadow-md">
                  <h3 class="text-xl font-bold text-center text-[#0d47a1] mb-4">✨ Generate a Value Scenario</h3>
                  <p class="text-gray-600 mb-6 text-center max-w-3xl mx-auto">Enter a customer pain point below. Gemini will analyze it and generate a complete value chain according to the HCAI42 framework, demonstrating how a need is translated into a service-based solution.</p>
@@ -338,13 +362,24 @@
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
+        // Secure API key storage in memory only
+        let n8nApiKey = null;
+
         async function callN8NWebhook(message) {
             try {
+                // Prepare headers
+                const headers = {
+                    'Content-Type': 'application/json'
+                };
+                
+                // Add API key if available
+                if (n8nApiKey && n8nApiKey.trim() !== '') {
+                    headers['x-api-key'] = n8nApiKey;
+                }
+                
                 const response = await fetch('https://n8n.hcai42.com/webhook/HCAIstructure', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
+                    headers: headers,
                     body: JSON.stringify({ message: message })
                 });
                 
@@ -476,6 +511,38 @@
                 options: { ...defaultChartOptions, indexAxis: 'y', scales: { x: { stacked: true, ticks: { callback: v => v + '%', color: brilliantBlues.primary }, grid: { color: '#e0e0e0' } }, y: { stacked: true, ticks: { color: brilliantBlues.primary }, grid: { display: false } } } }
             });
         }
+
+        // API Configuration event listeners
+        document.getElementById('toggleApiConfig').addEventListener('click', () => {
+            const configSection = document.getElementById('apiConfigSection');
+            const toggleBtn = document.getElementById('toggleApiConfig');
+            
+            if (configSection.classList.contains('hidden')) {
+                configSection.classList.remove('hidden');
+                toggleBtn.textContent = 'Hide';
+            } else {
+                configSection.classList.add('hidden');
+                toggleBtn.textContent = 'Configure';
+            }
+        });
+
+        document.getElementById('saveApiConfig').addEventListener('click', () => {
+            const apiKeyInput = document.getElementById('n8nApiKey');
+            const apiKey = apiKeyInput.value.trim();
+            
+            if (apiKey) {
+                n8nApiKey = apiKey;
+                showModal(`<div class="text-green-600"><p class="text-xl font-bold mb-2">✓ Saved</p><p>API key configured for this session.</p><button onclick="hideModal()" class="gemini-button mt-4">Close</button></div>`);
+            } else {
+                showError('Please enter a valid API key.');
+            }
+        });
+
+        document.getElementById('clearApiConfig').addEventListener('click', () => {
+            n8nApiKey = null;
+            document.getElementById('n8nApiKey').value = '';
+            showModal(`<div class="text-orange-600"><p class="text-xl font-bold mb-2">🗑️ Cleared</p><p>API key removed from memory.</p><button onclick="hideModal()" class="gemini-button mt-4">Close</button></div>`);
+        });
 
         window.onload = initializeCharts;
     </script>
