@@ -387,8 +387,15 @@
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 
-                const result = await response.text();
-                return result;
+                const result = await response.json();
+                
+                // Extract message from JSON response
+                if (result && result.message) {
+                    return result.message;
+                } else {
+                    // Fallback for non-standard responses
+                    return JSON.stringify(result);
+                }
             } catch (error) {
                 console.error('N8N Webhook Error:', error);
                 throw error;
