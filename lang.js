@@ -90,6 +90,7 @@
 
     // Footer
     'footer.framework': { en: 'Framework', de: 'Framework' },
+    'footer.impressum': { en: 'Imprint', de: 'Impressum' },
     'footer.policy': { en: 'Privacy Policy', de: 'Datenschutz' },
     'footer.copy': { en: '© 2026 HCAI42. All rights reserved.', de: '© 2026 HCAI42. Alle Rechte vorbehalten.' }
   };
