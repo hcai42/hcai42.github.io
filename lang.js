@@ -10,12 +10,12 @@
     // Hero
     'hero.badge': {
       en: 'AI-Powered Business · Data-Driven Trust · Scaled to Win',
-      de: 'KI-gestuetztes Business · Datengetriebenes Vertrauen · Skaliert zum Erfolg'
+      de: 'KI-gestütztes Business · Datengetriebenes Vertrauen · Skaliert zum Erfolg'
     },
-    'hero.title': { en: 'We build AI you actually own.', de: 'Wir bauen KI, die dir wirklich gehoert.' },
+    'hero.title': { en: 'We build AI you actually own.', de: 'Wir bauen KI, die dir wirklich gehört.' },
     'hero.sub': {
       en: 'hcai42 is the company behind 3cors. We build AI software that organisations own, understand, and control. Full sovereignty, zero lock-in.',
-      de: 'hcai42 ist das Unternehmen hinter 3cors. Wir bauen KI-Software, die Unternehmen besitzen, verstehen und kontrollieren. Volle Souveraenitaet, kein Lock-in.'
+      de: 'hcai42 ist das Unternehmen hinter 3cors. Wir bauen KI-Software, die Unternehmen besitzen, verstehen und kontrollieren. Volle Souveränität, kein Lock-in.'
     },
     'hero.cta1': { en: 'Read our Mission', de: 'Leitbild lesen' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
@@ -24,36 +24,36 @@
     'leitbild.title': { en: 'Our Mission', de: 'Unser Leitbild' },
     'leitbild.lead': {
       en: '<strong>You Own It.</strong> We build AI software that belongs to the people who use it. Not to us, not to a cloud provider, not to a model.',
-      de: '<strong>Du bestimmst.</strong> Wir bauen KI-Software, die den Menschen gehoert, die sie nutzen. Nicht uns, keinem Cloud-Anbieter, keinem Modell.'
+      de: '<strong>Du bestimmst.</strong> Wir bauen KI-Software, die den Menschen gehört, die sie nutzen. Nicht uns, keinem Cloud-Anbieter, keinem Modell.'
     },
     'leitbild.mandate': { en: 'Our Mandate', de: 'Unser Auftrag' },
     'leitbild.mandate.desc': {
       en: 'We give organisations back control over their AI. Software they can own, understand, and leave at any time. Data sovereignty is the foundation, not an add-on.',
-      de: 'Wir geben Unternehmen die Kontrolle ueber ihre KI zurueck. Software, die sie besitzen, verstehen und jederzeit verlassen koennen. Datensouveraenitaet ist das Fundament, kein Zusatz.'
+      de: 'Wir geben Unternehmen die Kontrolle über ihre KI zurück. Software, die sie besitzen, verstehen und jederzeit verlassen können. Datensouveränität ist das Fundament, kein Zusatz.'
     },
     'leitbild.vision': { en: 'Our Vision', de: 'Unsere Vision' },
     'leitbild.vision.desc': {
       en: 'A future where organisations use AI without making themselves dependent. We are the proof that powerful AI and full sovereignty are not a contradiction.',
-      de: 'Eine Zukunft, in der Unternehmen KI nutzen, ohne sich abhaengig zu machen. Wir sind der Beweis, dass leistungsfaehige KI und volle Souveraenitaet kein Widerspruch sind.'
+      de: 'Eine Zukunft, in der Unternehmen KI nutzen, ohne sich abhängig zu machen. Wir sind der Beweis, dass leistungsfähige KI und volle Souveränität kein Widerspruch sind.'
     },
     'leitbild.measure': {
       en: '<strong>Our measure:</strong> has the organisation that uses our software gained more control, more clarity, and more time for what matters? If yes, we have done our job well.',
-      de: '<strong>Unser Massstab:</strong> Hat das Unternehmen, das unsere Software nutzt, mehr Kontrolle, mehr Klarheit und mehr Zeit fuer das Wesentliche gewonnen? Wenn ja, haben wir unsere Arbeit gut gemacht.'
+      de: '<strong>Unser Maßstab:</strong> Hat das Unternehmen, das unsere Software nutzt, mehr Kontrolle, mehr Klarheit und mehr Zeit für das Wesentliche gewonnen? Wenn ja, haben wir unsere Arbeit gut gemacht.'
     },
 
     // Values
     'werte.title': { en: 'Values', de: 'Werte' },
-    'werte.1': { en: 'Ownership over Dependence', de: 'Eigentum vor Abhaengigkeit' },
+    'werte.1': { en: 'Ownership over Dependence', de: 'Eigentum vor Abhängigkeit' },
     'werte.1.desc': {
       en: 'No lock-in. Full export, real deletion, deployable on your own hardware. Whoever can get in must be able to get out again.',
-      de: 'Kein Lock-in. Voller Export, echtes Loeschen, deploybar auf eigener Hardware. Wer rein kann, muss auch wieder raus koennen.'
+      de: 'Kein Lock-in. Voller Export, echtes Löschen, deploybar auf eigener Hardware. Wer rein kann, muss auch wieder raus können.'
     },
     'werte.2': { en: 'Honesty over Hype', de: 'Ehrlichkeit statt Hype' },
     'werte.2.desc': {
       en: 'We promise what we deliver and deliver what we promise. No buzzwords, transparent costs, verifiable claims.',
-      de: 'Wir versprechen, was wir liefern, und liefern, was wir versprechen. Keine Buzzwords, transparente Kosten, pruefbare Aussagen.'
+      de: 'Wir versprechen, was wir liefern, und liefern, was wir versprechen. Keine Buzzwords, transparente Kosten, prüfbare Aussagen.'
     },
-    'werte.3': { en: 'Determinism carries, AI shapes', de: 'Determinismus traegt, KI gestaltet' },
+    'werte.3': { en: 'Determinism carries, AI shapes', de: 'Determinismus trägt, KI gestaltet' },
     'werte.3.desc': {
       en: 'A schema-validated foundation sets the rules. AI works as a tenant within them. Trust comes from traceability, not magic.',
       de: 'Ein schema-validiertes Fundament gibt die Regeln vor. KI arbeitet als Tenant darin. Vertrauen entsteht aus Nachvollziehbarkeit, nicht aus Magie.'
@@ -61,14 +61,14 @@
     'werte.4': { en: 'Data Protection is Respect', de: 'Datenschutz ist Respekt' },
     'werte.4.desc': {
       en: 'GDPR, data locality and audit trails as an attitude, not a chore. Respect for the people behind the data.',
-      de: 'DSGVO, Datenlokalitaet und Audit-Trails als Haltung, nicht als Pflichtuebung. Respekt vor den Menschen hinter den Daten.'
+      de: 'DSGVO, Datenlokalität und Audit-Trails als Haltung, nicht als Pflichtübung. Respekt vor den Menschen hinter den Daten.'
     },
 
     // Brands
     'marken.title': { en: 'Our Brands', de: 'Unsere Marken' },
     'marken.sub': {
       en: 'hcai42 holds two trademarks registered with the German Patent and Trade Mark Office (DPMA).',
-      de: 'hcai42 haelt zwei beim Deutschen Patent- und Markenamt (DPMA) eingetragene Marken.'
+      de: 'hcai42 hält zwei beim Deutschen Patent- und Markenamt (DPMA) eingetragene Marken.'
     },
     'marken.hcai.desc': {
       en: 'Our AI framework: a structured method for bringing AI into business safely, with governance and human oversight at its core.',
@@ -92,7 +92,91 @@
     'footer.framework': { en: 'Framework', de: 'Framework' },
     'footer.impressum': { en: 'Imprint', de: 'Impressum' },
     'footer.policy': { en: 'Privacy Policy', de: 'Datenschutz' },
-    'footer.copy': { en: '© 2026 HCAI42. All rights reserved.', de: '© 2026 HCAI42. Alle Rechte vorbehalten.' }
+    'footer.copy': { en: '© 2026 HCAI42. All rights reserved.', de: '© 2026 HCAI42. Alle Rechte vorbehalten.' },
+    'footer.home': { en: 'Home', de: 'Startseite' },
+
+    // Framework page
+    'fw.title': { en: 'The hcai Framework', de: 'Das hcai Framework' },
+    'fw.sub': {
+      en: 'A unified architecture for verifiable value delivery and fine-grained cost control.',
+      de: 'Eine einheitliche Architektur für nachweisbare Wertlieferung und feingranulare Kostenkontrolle.'
+    },
+
+    'fw.pillars.title': { en: 'Five Integrated Pillars', de: 'Fünf integrierte Säulen' },
+    'fw.pillars.sub': {
+      en: 'hcai builds on five core concepts to bridge the gap between business strategy and technology execution.',
+      de: 'hcai baut auf fünf Kernkonzepten auf, um die Lücke zwischen Geschäftsstrategie und technischer Umsetzung zu schließen.'
+    },
+    'fw.pillar1.title': { en: 'Business Model Canvas', de: 'Business Model Canvas' },
+    'fw.pillar1.desc': { en: 'Anchors all work in strategic business value.', de: 'Verankert jede Arbeit im strategischen Geschäftswert.' },
+    'fw.pillar2.title': { en: 'Total Learning Architecture', de: 'Total Learning Architecture' },
+    'fw.pillar2.desc': { en: 'A flexible, microservice-based technical backbone.', de: 'Ein flexibles, microservice-basiertes technisches Rückgrat.' },
+    'fw.pillar3.title': { en: 'Core Information Model', de: 'Core Information Model' },
+    'fw.pillar3.desc': { en: 'Makes value propositions a verifiable commitment.', de: 'Macht Wertversprechen zu einer nachweisbaren Zusage.' },
+    'fw.pillar4.title': { en: 'Service-Based Costing', de: 'Service-basierte Kostenrechnung' },
+    'fw.pillar4.desc': { en: 'Enables fine-grained, per-service cost control.', de: 'Ermöglicht feingranulare Kostenkontrolle pro Service.' },
+    'fw.pillar5.title': { en: 'AI &amp; BPM Automation', de: 'KI- &amp; BPM-Automatisierung' },
+    'fw.pillar5.desc': { en: 'Orchestrates and enforces value delivery.', de: 'Orchestriert und sichert die Wertlieferung.' },
+
+    'fw.layers.title': { en: 'The hcai Layered Model', de: 'Das hcai-Schichtenmodell' },
+    'fw.layers.sub': {
+      en: 'A clear separation of concerns, from user-facing interactions down to the core infrastructure.',
+      de: 'Eine klare Trennung der Zuständigkeiten, von der Nutzerinteraktion bis hinunter zur Kerninfrastruktur.'
+    },
+    'fw.layer1.title': { en: 'Use Case Layer', de: 'Use-Case-Schicht' },
+    'fw.layer1.desc': { en: 'User-facing applications &amp; portals realizing a "Customer Job"', de: 'Anwendungen und Portale, die einen „Customer Job" realisieren' },
+    'fw.layer2.title': { en: 'Process Layer', de: 'Prozess-Schicht' },
+    'fw.layer2.desc': { en: 'BPM engines orchestrating end-to-end business workflows', de: 'BPM-Engines orchestrieren durchgängige Geschäftsabläufe' },
+    'fw.layer3.title': { en: 'Service Layer', de: 'Service-Schicht' },
+    'fw.layer3.desc': { en: 'TLA microservices exposing discrete business capabilities via APIs', de: 'TLA-Microservices stellen einzelne Geschäftsfähigkeiten über APIs bereit' },
+    'fw.layer4.title': { en: 'Application Layer', de: 'Anwendungs-Schicht' },
+    'fw.layer4.desc': { en: 'Core data platforms and persistent stores (LRS, CaSS, XI)', de: 'Zentrale Datenplattformen und persistente Speicher (LRS, CaSS, XI)' },
+    'fw.layer5.title': { en: 'Infrastructure Layer', de: 'Infrastruktur-Schicht' },
+    'fw.layer5.desc': { en: 'Compute, storage, and network resources (Cloud, Docker, Kafka)', de: 'Rechen-, Speicher- und Netzwerkressourcen (Cloud, Docker, Kafka)' },
+
+    'fw.vb.title': { en: 'The Interactive Value Bridge', de: 'Die interaktive Value Bridge' },
+    'fw.vb.sub': { en: 'Connect business needs to technical implementation with AI.', de: 'Verbinde Geschäftsbedürfnisse durch KI mit der technischen Umsetzung.' },
+    'fw.api.title': { en: '🔐 API Configuration', de: '🔐 API-Konfiguration' },
+    'fw.api.label': { en: 'N8N API Key (optional)', de: 'N8N API-Key (optional)' },
+    'fw.api.note': {
+      en: '⚠️ The API key is held in memory for this session only. It is not stored permanently.',
+      de: '⚠️ Der API-Key wird nur für diese Sitzung im Speicher gehalten und nicht dauerhaft gespeichert.'
+    },
+    'fw.gen.title': { en: '✨ Generate a Value Scenario', de: '✨ Ein Wertszenario generieren' },
+    'fw.gen.desc': {
+      en: 'Enter a customer pain point. Gemini analyses it and generates a complete value chain according to the hcai framework, showing how a need is translated into a service-based solution.',
+      de: 'Gib einen Kunden-Painpoint ein. Gemini analysiert ihn und erzeugt eine vollständige Wertschöpfungskette nach dem hcai-Framework, die zeigt, wie ein Bedarf in eine service-basierte Lösung übersetzt wird.'
+    },
+    'fw.chain1.title': { en: '1. Customer Pain Identified', de: '1. Kunden-Pain identifiziert' },
+    'fw.chain1.desc': { en: '"Accessing up-to-date hygiene protocols is slow and unreliable."', de: '„Der Zugriff auf aktuelle Hygieneprotokolle ist langsam und unzuverlässig."' },
+    'fw.chain2.title': { en: '2. "Pain Reliever" Defined', de: '2. „Pain Reliever" definiert' },
+    'fw.chain2.desc': { en: '"Provide on-demand, searchable access to a version-controlled guideline library."', de: '„Durchsuchbarer On-Demand-Zugriff auf eine versionierte Richtlinienbibliothek."' },
+    'fw.chain3.title': { en: '3. TLA Service Mapped', de: '3. TLA-Service zugeordnet' },
+    'fw.chain3.desc': { en: 'The "Activity Resource Management" service is tasked to deliver this value.', de: 'Der Service „Activity Resource Management" wird beauftragt, diesen Wert zu liefern.' },
+    'fw.chain4.title': { en: '4. Use Case Fulfilled', de: '4. Use Case erfüllt' },
+    'fw.chain4.desc': { en: 'A nurse searches on a tablet and instantly receives the correct protocol via an API call.', de: 'Eine Pflegekraft sucht auf dem Tablet und erhält das korrekte Protokoll sofort über einen API-Aufruf.' },
+    'fw.integrity.title': { en: 'Value Integrity: The Signed Commitment', de: 'Wertintegrität: Die signierte Zusage' },
+    'fw.integrity.desc': {
+      en: 'The Value-CorIM turns a value proposition into an auditable manifest, enabling programmatic verification against real-world performance data.',
+      de: 'Das Value-CorIM macht aus einem Wertversprechen ein auditierbares Manifest und ermöglicht die programmatische Prüfung anhand realer Leistungsdaten.'
+    },
+    'fw.cost.title': { en: '✨ Dynamic Economics of Service', de: '✨ Dynamische Service-Ökonomie' },
+    'fw.cost.desc': { en: 'Enter a service name. Gemini estimates a plausible cost breakdown, which updates the chart below.', de: 'Gib einen Service-Namen ein. Gemini schätzt eine plausible Kostenaufschlüsselung, die das Diagramm unten aktualisiert.' },
+
+    'fw.auto.title': { en: 'The Automation Engine', de: 'Die Automatisierungs-Engine' },
+    'fw.auto.sub': { en: 'A self-regulating system that ensures value commitments are met.', de: 'Ein selbstregulierendes System, das die Einhaltung von Wertzusagen sicherstellt.' },
+    'fw.auto1.title': { en: '1. AI Verifier Monitors', de: '1. KI-Verifier überwacht' },
+    'fw.auto1.desc': { en: 'An AI system continuously collects performance data (Evidence) and compares it to the signed Value-CorIM.', de: 'Ein KI-System sammelt kontinuierlich Leistungsdaten (Evidence) und vergleicht sie mit dem signierten Value-CorIM.' },
+    'fw.auto2.title': { en: '2. Deviation Detected', de: '2. Abweichung erkannt' },
+    'fw.auto2.desc': { en: 'The AI predicts that a service is at risk of missing its promised value (e.g. cost savings are off track).', de: 'Die KI prognostiziert, dass ein Service seinen zugesagten Wert zu verfehlen droht (z. B. Kosteneinsparungen geraten aus dem Plan).' },
+    'fw.auto3.title': { en: '3. BPM Workflow Triggered', de: '3. BPM-Workflow ausgelöst' },
+    'fw.auto3.desc': { en: 'The AI automatically starts a BPM remediation workflow, takes corrective action and creates a self-healing system.', de: 'Die KI startet automatisch einen BPM-Korrekturworkflow, ergreift Gegenmaßnahmen und schafft ein selbstheilendes System.' },
+
+    'fw.outro.lead': { en: 'hcai42: Strategy, Technology and Finance. Unified.', de: 'hcai42: Strategie, Technologie und Finanzen. Vereint.' },
+    'fw.outro.desc': {
+      en: 'This infographic visualises the hcai framework and shows a closed loop from strategic intent to verifiable, financially accountable execution.',
+      de: 'Diese Infografik visualisiert das hcai-Framework und zeigt einen geschlossenen Kreislauf von der strategischen Absicht bis zur nachweisbaren, finanziell verantwortbaren Umsetzung.'
+    }
   };
 
   function getLang() {
