@@ -135,33 +135,19 @@
     'fw.layer5.desc': { en: 'Compute, storage, and network resources (Cloud, Docker, Kafka)', de: 'Rechen-, Speicher- und Netzwerkressourcen (Cloud, Docker, Kafka)' },
 
     'fw.vb.title': { en: 'The Interactive Value Bridge', de: 'Die interaktive Value Bridge' },
-    'fw.vb.sub': { en: 'Connect business needs to technical implementation with AI.', de: 'Verbinde Geschäftsbedürfnisse durch KI mit der technischen Umsetzung.' },
-    'fw.api.title': { en: '🔐 API Configuration', de: '🔐 API-Konfiguration' },
-    'fw.api.label': { en: 'N8N API Key (optional)', de: 'N8N API-Key (optional)' },
-    'fw.api.note': {
-      en: '⚠️ The API key is held in memory for this session only. It is not stored permanently.',
-      de: '⚠️ Der API-Key wird nur für diese Sitzung im Speicher gehalten und nicht dauerhaft gespeichert.'
-    },
-    'fw.gen.title': { en: '✨ Generate a Value Scenario', de: '✨ Ein Wertszenario generieren' },
+    'fw.vb.sub': { en: 'See how business needs connect to technical implementation.', de: 'Sieh, wie Geschäftsbedürfnisse mit der technischen Umsetzung verbunden werden.' },
+    'fw.gen.title': { en: 'Explore a Value Scenario', de: 'Ein Wertszenario erkunden' },
     'fw.gen.desc': {
-      en: 'Enter a customer pain point. Gemini analyses it and generates a complete value chain according to the hcai framework, showing how a need is translated into a service-based solution.',
-      de: 'Gib einen Kunden-Painpoint ein. Gemini analysiert ihn und erzeugt eine vollständige Wertschöpfungskette nach dem hcai-Framework, die zeigt, wie ein Bedarf in eine service-basierte Lösung übersetzt wird.'
+      en: 'Pick an example need and see how the hcai framework turns it into a service-based solution, step by step.',
+      de: 'Wähle einen Beispielbedarf und sieh, wie das hcai-Framework ihn Schritt für Schritt in eine service-basierte Lösung überführt.'
     },
-    'fw.chain1.title': { en: '1. Customer Pain Identified', de: '1. Kunden-Pain identifiziert' },
-    'fw.chain1.desc': { en: '"Accessing up-to-date hygiene protocols is slow and unreliable."', de: '„Der Zugriff auf aktuelle Hygieneprotokolle ist langsam und unzuverlässig."' },
-    'fw.chain2.title': { en: '2. "Pain Reliever" Defined', de: '2. „Pain Reliever" definiert' },
-    'fw.chain2.desc': { en: '"Provide on-demand, searchable access to a version-controlled guideline library."', de: '„Durchsuchbarer On-Demand-Zugriff auf eine versionierte Richtlinienbibliothek."' },
-    'fw.chain3.title': { en: '3. TLA Service Mapped', de: '3. TLA-Service zugeordnet' },
-    'fw.chain3.desc': { en: 'The "Activity Resource Management" service is tasked to deliver this value.', de: 'Der Service „Activity Resource Management" wird beauftragt, diesen Wert zu liefern.' },
-    'fw.chain4.title': { en: '4. Use Case Fulfilled', de: '4. Use Case erfüllt' },
-    'fw.chain4.desc': { en: 'A nurse searches on a tablet and instantly receives the correct protocol via an API call.', de: 'Eine Pflegekraft sucht auf dem Tablet und erhält das korrekte Protokoll sofort über einen API-Aufruf.' },
     'fw.integrity.title': { en: 'Value Integrity: The Signed Commitment', de: 'Wertintegrität: Die signierte Zusage' },
     'fw.integrity.desc': {
       en: 'The Value-CorIM turns a value proposition into an auditable manifest, enabling programmatic verification against real-world performance data.',
       de: 'Das Value-CorIM macht aus einem Wertversprechen ein auditierbares Manifest und ermöglicht die programmatische Prüfung anhand realer Leistungsdaten.'
     },
-    'fw.cost.title': { en: '✨ Dynamic Economics of Service', de: '✨ Dynamische Service-Ökonomie' },
-    'fw.cost.desc': { en: 'Enter a service name. Gemini estimates a plausible cost breakdown, which updates the chart below.', de: 'Gib einen Service-Namen ein. Gemini schätzt eine plausible Kostenaufschlüsselung, die das Diagramm unten aktualisiert.' },
+    'fw.cost.title': { en: 'Economics of a Service', de: 'Ökonomie eines Service' },
+    'fw.cost.desc': { en: 'Pick an example service to see a representative cost breakdown across the hcai layers.', de: 'Wähle einen Beispiel-Service, um eine repräsentative Kostenaufschlüsselung über die hcai-Schichten zu sehen.' },
 
     'fw.auto.title': { en: 'The Automation Engine', de: 'Die Automatisierungs-Engine' },
     'fw.auto.sub': { en: 'A self-regulating system that ensures value commitments are met.', de: 'Ein selbstregulierendes System, das die Einhaltung von Wertzusagen sicherstellt.' },
@@ -176,7 +162,8 @@
     'fw.outro.desc': {
       en: 'This infographic visualises the hcai framework and shows a closed loop from strategic intent to verifiable, financially accountable execution.',
       de: 'Diese Infografik visualisiert das hcai-Framework und zeigt einen geschlossenen Kreislauf von der strategischen Absicht bis zur nachweisbaren, finanziell verantwortbaren Umsetzung.'
-    }
+    },
+    'fw.cta': { en: 'Try it in 3cors', de: 'In 3cors ausprobieren' }
   };
 
   function getLang() {
