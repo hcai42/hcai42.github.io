@@ -480,6 +480,45 @@ body {
   color: var(--blue-light);
 }
 
+/* === Legal Pages === */
+.legal {
+  padding: 120px 0 80px;
+}
+
+.legal h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.legal h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.legal p, .legal li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.legal ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.legal a {
+  color: var(--blue-light);
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .nav-links {
