@@ -67,8 +67,8 @@
     // Brands
     'marken.title': { en: 'Our Brands', de: 'Unsere Marken' },
     'marken.sub': {
-      en: 'hcai42 holds two trademarks registered with the German Patent and Trade Mark Office (DPMA).',
-      de: 'hcai42 hält zwei beim Deutschen Patent- und Markenamt (DPMA) eingetragene Marken.'
+      en: 'hcai and 3cors are registered trademarks of hcai42, protected with the German Patent and Trade Mark Office (DPMA). Behind both stands a real, accountable company you can rely on for the long term.',
+      de: 'hcai und 3cors sind eingetragene Marken von hcai42, geschützt beim Deutschen Patent- und Markenamt (DPMA). Hinter beiden steht ein reales, greifbares Unternehmen, auf das Sie langfristig bauen können.'
     },
     'marken.hcai.desc': {
       en: 'Our AI framework: a structured method for bringing AI into business safely, with governance and human oversight at its core.',
@@ -163,7 +163,25 @@
       en: 'This infographic visualises the hcai framework and shows a closed loop from strategic intent to verifiable, financially accountable execution.',
       de: 'Diese Infografik visualisiert das hcai-Framework und zeigt einen geschlossenen Kreislauf von der strategischen Absicht bis zur nachweisbaren, finanziell verantwortbaren Umsetzung.'
     },
-    'fw.cta': { en: 'Try it in 3cors', de: 'In 3cors ausprobieren' }
+    'fw.cta': { en: 'Try it in 3cors', de: 'In 3cors ausprobieren' },
+
+    // Framework page: closed-loop infographic
+    'fw.loop.title': { en: 'The Closed Loop', de: 'Der geschlossene Kreislauf' },
+    'fw.loop.sub': {
+      en: 'From strategic intent to verified execution and back. Each step feeds the next, and verified results return into strategy.',
+      de: 'Von der strategischen Absicht bis zur nachweisbaren Umsetzung und zurück. Jeder Schritt speist den nächsten, verifizierte Ergebnisse fließen zurück in die Strategie.'
+    },
+    'fw.loop.1.t': { en: '1. Strategy', de: '1. Strategie' },
+    'fw.loop.1.d': { en: 'Business value is defined in the Business Model Canvas.', de: 'Der Geschäftswert wird im Business Model Canvas definiert.' },
+    'fw.loop.2.t': { en: '2. Commitment', de: '2. Zusage' },
+    'fw.loop.2.d': { en: 'The Value-CorIM turns the promise into a signed, auditable manifest.', de: 'Das Value-CorIM macht das Versprechen zu einem signierten, auditierbaren Manifest.' },
+    'fw.loop.3.t': { en: '3. Execution', de: '3. Umsetzung' },
+    'fw.loop.3.d': { en: 'TLA microservices deliver the committed value in production.', de: 'TLA-Microservices liefern den zugesagten Wert im Betrieb.' },
+    'fw.loop.4.t': { en: '4. Verification', de: '4. Verifikation' },
+    'fw.loop.4.d': { en: 'The AI Verifier compares live telemetry against the signed commitment.', de: 'Der KI-Verifier vergleicht Live-Telemetrie mit der signierten Zusage.' },
+    'fw.loop.5.t': { en: '5. Remediation', de: '5. Korrektur' },
+    'fw.loop.5.d': { en: 'On deviation, a BPM workflow takes corrective action automatically.', de: 'Bei Abweichung steuert ein BPM-Workflow automatisch nach.' },
+    'fw.loop.back': { en: '↺ Verified results feed back into strategy', de: '↺ Verifizierte Ergebnisse fließen zurück in die Strategie' }
   };
 
   function getLang() {
