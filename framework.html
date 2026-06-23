@@ -83,6 +83,7 @@
     .fw-outro p { color: var(--text-secondary); line-height: 1.7; }
 
     /* Closed-loop infographic */
+    .loop-heading { text-align: center; color: var(--text); font-size: 1.15rem; font-weight: 600; margin: 0 auto 18px; }
     .loop-diagram { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 10px; max-width: 1100px; margin: 0 auto; }
     .loop-node {
       flex: 1 1 170px; min-width: 150px; max-width: 200px;
@@ -229,11 +230,15 @@
     </div>
   </section>
 
-  <!-- Closed Loop Infographic -->
+  <!-- Outro + Closed-loop infographic -->
   <section class="section section-alt">
     <div class="container">
-      <h2 class="section-title" data-i18n="fw.loop.title">The Closed Loop</h2>
-      <p class="section-sub" data-i18n="fw.loop.sub">From strategic intent to verified execution and back. Each step feeds the next, and verified results return into strategy.</p>
+      <div class="fw-outro">
+        <p class="lead" data-i18n="fw.outro.lead">hcai42: Strategy, Technology and Finance. Unified.</p>
+        <p data-i18n="fw.outro.desc">This infographic visualises the hcai framework and shows a closed loop from strategic intent to verifiable, financially accountable execution.</p>
+      </div>
+
+      <h3 class="loop-heading" data-i18n="fw.loop.title">The Closed Loop</h3>
       <div class="loop-diagram">
         <div class="loop-node"><h4 data-i18n="fw.loop.1.t">1. Strategy</h4><p data-i18n="fw.loop.1.d">Business value is defined in the Business Model Canvas.</p></div>
         <div class="loop-link">→</div>
@@ -246,16 +251,11 @@
         <div class="loop-node"><h4 data-i18n="fw.loop.5.t">5. Remediation</h4><p data-i18n="fw.loop.5.d">On deviation, a BPM workflow takes corrective action automatically.</p></div>
       </div>
       <div class="loop-back" data-i18n="fw.loop.back">↺ Verified results feed back into strategy</div>
-    </div>
-  </section>
 
-  <!-- Outro -->
-  <section class="section">
-    <div class="container fw-outro">
-      <p class="lead" data-i18n="fw.outro.lead">hcai42: Strategy, Technology and Finance. Unified.</p>
-      <p data-i18n="fw.outro.desc">This infographic visualises the hcai framework and shows a closed loop from strategic intent to verifiable, financially accountable execution.</p>
-      <div class="fw-cta" style="margin-top:34px;">
-        <a href="https://www.3cors.com" class="btn btn-primary" data-i18n="fw.cta">Try it in 3cors</a>
+      <div class="fw-outro" style="margin-top:34px;">
+        <div class="fw-cta">
+          <a href="https://www.3cors.com" class="btn btn-primary" data-i18n="fw.cta">Try it in 3cors</a>
+        </div>
       </div>
     </div>
   </section>
