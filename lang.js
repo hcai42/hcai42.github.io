@@ -185,6 +185,16 @@
   };
 
   function getLang() {
+    try {
+      var p = new URLSearchParams(window.location.search).get('lang');
+      if (p) {
+        var pl = p.toLowerCase().slice(0, 2);
+        if (pl === 'de' || pl === 'en') {
+          localStorage.setItem('hcai42-lang', pl);
+          return pl;
+        }
+      }
+    } catch (e) {}
     var stored = localStorage.getItem('hcai42-lang');
     if (stored) return stored;
     var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
