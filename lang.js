@@ -67,8 +67,8 @@
     // Brands
     'marken.title': { en: 'Our Brands', de: 'Unsere Marken' },
     'marken.sub': {
-      en: 'hcai and 3cors are registered trademarks of hcai42, protected with the German Patent and Trade Mark Office (DPMA). Behind both stands a real, accountable company you can rely on for the long term.',
-      de: 'hcai und 3cors sind eingetragene Marken von hcai42, geschützt beim Deutschen Patent- und Markenamt (DPMA). Hinter beiden steht ein reales, greifbares Unternehmen, auf das Sie langfristig bauen können.'
+      en: 'AI you own, understand, and control: resilient, traceable, sovereign. hcai and 3cors are trademarks of hcai42, registered with the German Patent and Trade Mark Office (DPMA) and backed by a real company you can rely on for the long term.',
+      de: 'KI, die Sie besitzen, verstehen und kontrollieren: resilient, nachvollziehbar, souverän. hcai und 3cors sind beim Deutschen Patent- und Markenamt (DPMA) eingetragene Marken von hcai42, getragen von einem realen Unternehmen, auf das Sie langfristig bauen können.'
     },
     'marken.hcai.desc': {
       en: 'Our AI framework: a structured method for bringing AI into business safely, with governance and human oversight at its core.',
@@ -76,8 +76,8 @@
     },
     'marken.hcai.link': { en: 'Explore the Framework →', de: 'Framework entdecken →' },
     'marken.3cors.desc': {
-      en: 'Our AI platform built on open-source technology. Three Cores: Intelligence, Memory, Billing. Self-hosted, GDPR-ready, zero lock-in.',
-      de: 'Unsere KI-Plattform auf Open-Source-Basis. Drei Kerne: Intelligence, Memory, Billing. Self-Hosted, DSGVO-konform, kein Lock-in.'
+      en: 'Our AI platform built on open source. Resilience and traceability through three cores: Intelligence, Memory, Billing. Self-hosted, GDPR-ready, zero lock-in.',
+      de: 'Unsere KI-Plattform auf Open-Source-Basis. Resilienz und Nachvollziehbarkeit durch drei Kerne: Intelligence, Memory, Billing. Self-Hosted, DSGVO-konform, kein Lock-in.'
     },
     'marken.3cors.link': { en: 'Visit the Platform →', de: 'Zur Plattform →' },
 
