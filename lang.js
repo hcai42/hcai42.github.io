@@ -5,12 +5,13 @@
     'nav.leitbild': { en: 'Mission', de: 'Leitbild' },
     'nav.werte': { en: 'Values', de: 'Werte' },
     'nav.marken': { en: 'Brands', de: 'Marken' },
+    'nav.prozess': { en: 'How It Works', de: 'Zusammenarbeit' },
     'nav.kontakt': { en: 'Contact', de: 'Kontakt' },
 
     // Hero
     'hero.badge': {
-      en: 'AI-Powered Business · Data-Driven Trust · Scaled to Win',
-      de: 'KI-gestütztes Business · Datengetriebenes Vertrauen · Skaliert zum Erfolg'
+      en: 'Independent company · Built in Germany · Full data sovereignty',
+      de: 'Unabhängiges Unternehmen · Made in Germany · Volle Datensouveränität'
     },
     'hero.title': { en: 'We build AI you actually own.', de: 'Wir bauen KI, die dir wirklich gehört.' },
     'hero.sub': {
@@ -19,6 +20,12 @@
     },
     'hero.cta1': { en: 'Read our Mission', de: 'Leitbild lesen' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
+
+    // Credibility / Metrics
+    'metrics.brands': { en: 'Trademarks registered with the DPMA', de: 'Beim DPMA eingetragene Marken' },
+    'metrics.germany': { en: 'Built and based in Germany', de: 'Entwickelt und ansässig in Deutschland' },
+    'metrics.lockin': { en: 'Vendor lock-in across our products', de: 'Vendor Lock-in in unseren Produkten' },
+    'metrics.sovereignty': { en: 'Data sovereignty, by design', de: 'Datensouveränität, by Design' },
 
     // Mission / Leitbild
     'leitbild.title': { en: 'Our Mission', de: 'Unser Leitbild' },
@@ -80,6 +87,28 @@
       de: 'Unsere KI-Plattform auf Open-Source-Basis. Resilienz und Nachvollziehbarkeit durch drei Kerne: Intelligence, Memory, Billing. Self-Hosted, DSGVO-konform, kein Lock-in.'
     },
     'marken.3cors.link': { en: 'Visit the Platform →', de: 'Zur Plattform →' },
+
+    // How It Works
+    'prozess.title': { en: 'How We Work Together', de: 'So arbeiten wir zusammen' },
+    'prozess.sub': {
+      en: 'From first conversation to software you own and run yourself. Three clear steps, no lock-in along the way.',
+      de: 'Vom ersten Gespräch bis zur Software, die Sie besitzen und selbst betreiben. Drei klare Schritte, ohne Lock-in auf dem Weg.'
+    },
+    'prozess.1.title': { en: 'We Talk', de: 'Wir sprechen' },
+    'prozess.1.desc': {
+      en: 'We map your situation, goals, and constraints together. An honest assessment of whether we are a fit, with no obligation.',
+      de: 'Wir klären gemeinsam Ihre Situation, Ziele und Rahmenbedingungen. Eine ehrliche Einschätzung, ob wir zusammenpassen, unverbindlich.'
+    },
+    'prozess.2.title': { en: 'We Build on Your Terms', de: 'Wir bauen zu Ihren Bedingungen' },
+    'prozess.2.desc': {
+      en: 'We deliver software that runs on your own hardware and follows the hcai principles: governance, traceability, and human oversight built in.',
+      de: 'Wir liefern Software, die auf Ihrer eigenen Hardware läuft und den hcai-Prinzipien folgt: Governance, Nachvollziehbarkeit und menschliche Kontrolle eingebaut.'
+    },
+    'prozess.3.title': { en: 'You Stay in Control', de: 'Sie behalten die Kontrolle' },
+    'prozess.3.desc': {
+      en: 'Full export, real deletion, no lock-in. Whoever can get in must be able to get out again. The software belongs to you, not to us.',
+      de: 'Voller Export, echtes Löschen, kein Lock-in. Wer rein kann, muss auch wieder raus können. Die Software gehört Ihnen, nicht uns.'
+    },
 
     // Contact
     'kontakt.title': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },

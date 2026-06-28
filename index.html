@@ -23,6 +23,7 @@
         <a href="#leitbild" data-i18n="nav.leitbild">Mission</a>
         <a href="#werte" data-i18n="nav.werte">Values</a>
         <a href="#marken" data-i18n="nav.marken">Brands</a>
+        <a href="#prozess" data-i18n="nav.prozess">How It Works</a>
         <a href="#kontakt" data-i18n="nav.kontakt">Contact</a>
         <button id="lang-toggle" class="lang-toggle">DE</button>
       </div>
@@ -39,12 +40,36 @@
   <section class="hero">
     <div class="grid-bg"></div>
     <div class="hero-content">
-      <div class="hero-badge" data-i18n="hero.badge">AI-Powered Business &middot; Data-Driven Trust &middot; Scaled to Win</div>
+      <div class="hero-badge" data-i18n="hero.badge">Independent company &middot; Built in Germany &middot; Full data sovereignty</div>
       <h1 data-i18n="hero.title">We build AI you actually own.</h1>
       <p class="hero-sub" data-i18n="hero.sub">hcai42 is the company behind 3cors. We build AI software that organisations own, understand, and control. Full sovereignty, zero lock-in.</p>
       <div class="hero-actions">
         <a href="#leitbild" class="btn btn-primary" data-i18n="hero.cta1">Read our Mission</a>
         <a href="#kontakt" class="btn btn-outline" data-i18n="hero.cta2">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility / Metrics -->
+  <section class="metrics-band">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-num">2</div>
+          <div class="metric-label" data-i18n="metrics.brands">Trademarks registered with the DPMA</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">DE</div>
+          <div class="metric-label" data-i18n="metrics.germany">Built and based in Germany</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">0</div>
+          <div class="metric-label" data-i18n="metrics.lockin">Vendor lock-in across our products</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">100%</div>
+          <div class="metric-label" data-i18n="metrics.sovereignty">Data sovereignty, by design</div>
+        </div>
       </div>
     </div>
   </section>
@@ -125,8 +150,33 @@
     </div>
   </section>
 
+  <!-- How It Works -->
+  <section id="prozess" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="prozess.title">How We Work Together</h2>
+      <p class="section-sub" data-i18n="prozess.sub">From first conversation to software you own and run yourself. Three clear steps, no lock-in along the way.</p>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h3 data-i18n="prozess.1.title">We Talk</h3>
+          <p data-i18n="prozess.1.desc">We map your situation, goals, and constraints together. An honest assessment of whether we are a fit, with no obligation.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h3 data-i18n="prozess.2.title">We Build on Your Terms</h3>
+          <p data-i18n="prozess.2.desc">We deliver software that runs on your own hardware and follows the hcai principles: governance, traceability, and human oversight built in.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h3 data-i18n="prozess.3.title">You Stay in Control</h3>
+          <p data-i18n="prozess.3.desc">Full export, real deletion, no lock-in. Whoever can get in must be able to get out again. The software belongs to you, not to us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
-  <section id="kontakt" class="section">
+  <section id="kontakt" class="section section-alt">
     <div class="container contact-section">
       <h2 class="section-title" data-i18n="kontakt.title">Get in Touch</h2>
       <p class="section-sub" data-i18n="kontakt.sub">Interested in working with hcai42? Let us talk.</p>
@@ -190,6 +240,28 @@
       new MutationObserver(function() {
         langBtnMobile.textContent = langBtn.textContent;
       }).observe(langBtn, { childList: true });
+    }
+
+    // Scroll reveal: subtle, staggered, accessible.
+    // Applied only via JS so no-JS and reduced-motion users always see content.
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced && 'IntersectionObserver' in window) {
+      var revealEls = document.querySelectorAll('.section-title, .section-sub, .metric, .feature, .principle, .brand-card, .process-step');
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function(el) {
+        el.classList.add('reveal');
+        var siblings = Array.prototype.slice.call(el.parentNode.children);
+        var idx = siblings.indexOf(el);
+        el.style.transitionDelay = (Math.min(idx, 5) * 70) + 'ms';
+        io.observe(el);
+      });
     }
   </script>
 </body>
