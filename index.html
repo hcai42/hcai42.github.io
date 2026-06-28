@@ -40,7 +40,7 @@
   <section class="hero">
     <div class="grid-bg"></div>
     <div class="hero-content">
-      <div class="hero-badge" data-i18n="hero.badge">AI-Powered Business &middot; Data-Driven Trust &middot; Scaled to Win</div>
+      <div class="hero-badge" data-i18n="hero.badge">Independent company &middot; Built in Germany &middot; Full data sovereignty</div>
       <h1 data-i18n="hero.title">We build AI you actually own.</h1>
       <p class="hero-sub" data-i18n="hero.sub">hcai42 is the company behind 3cors. We build AI software that organisations own, understand, and control. Full sovereignty, zero lock-in.</p>
       <div class="hero-actions">
@@ -240,6 +240,28 @@
       new MutationObserver(function() {
         langBtnMobile.textContent = langBtn.textContent;
       }).observe(langBtn, { childList: true });
+    }
+
+    // Scroll reveal: subtle, staggered, accessible.
+    // Applied only via JS so no-JS and reduced-motion users always see content.
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced && 'IntersectionObserver' in window) {
+      var revealEls = document.querySelectorAll('.section-title, .section-sub, .metric, .feature, .principle, .brand-card, .process-step');
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function(el) {
+        el.classList.add('reveal');
+        var siblings = Array.prototype.slice.call(el.parentNode.children);
+        var idx = siblings.indexOf(el);
+        el.style.transitionDelay = (Math.min(idx, 5) * 70) + 'ms';
+        io.observe(el);
+      });
     }
   </script>
 </body>
