@@ -24,7 +24,7 @@
     // Credibility / Metrics
     'metrics.choice.num': { en: 'Your Choice', de: 'Ihre Wahl' },
     'metrics.choice': { en: 'Runs in your own environment, data centre or cloud', de: 'Läuft in Ihrer eigenen Umgebung, ob Rechenzentrum oder Cloud' },
-    'metrics.germany': { en: 'Built and based in Germany', de: 'Entwickelt und ansässig in Deutschland' },
+    'metrics.eu': { en: 'Built and based in the EU', de: 'In der EU entwickelt und ansässig' },
     'metrics.lockin': { en: 'Vendor lock-in: full export, real deletion, anytime', de: 'Vendor Lock-in: voller Export, echtes Löschen, jederzeit' },
     'metrics.gdpr.num': { en: 'GDPR', de: 'DSGVO' },
     'metrics.gdpr': { en: 'Built for European data protection requirements', de: 'Ausgelegt auf europäische Datenschutz-Anforderungen' },
