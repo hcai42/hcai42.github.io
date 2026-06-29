@@ -22,10 +22,12 @@
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
 
     // Credibility / Metrics
-    'metrics.brands': { en: 'Trademarks registered with the DPMA', de: 'Beim DPMA eingetragene Marken' },
+    'metrics.choice.num': { en: 'Your Choice', de: 'Ihre Wahl' },
+    'metrics.choice': { en: 'Runs in your own environment, data centre or cloud', de: 'Läuft in Ihrer eigenen Umgebung, ob Rechenzentrum oder Cloud' },
     'metrics.germany': { en: 'Built and based in Germany', de: 'Entwickelt und ansässig in Deutschland' },
-    'metrics.lockin': { en: 'Vendor lock-in across our products', de: 'Vendor Lock-in in unseren Produkten' },
-    'metrics.sovereignty': { en: 'Data sovereignty, by design', de: 'Datensouveränität, by Design' },
+    'metrics.lockin': { en: 'Vendor lock-in: full export, real deletion, anytime', de: 'Vendor Lock-in: voller Export, echtes Löschen, jederzeit' },
+    'metrics.gdpr.num': { en: 'GDPR', de: 'DSGVO' },
+    'metrics.gdpr': { en: 'Built for European data protection requirements', de: 'Ausgelegt auf europäische Datenschutz-Anforderungen' },
 
     // Mission / Leitbild
     'leitbild.title': { en: 'Our Mission', de: 'Unser Leitbild' },
@@ -74,8 +76,8 @@
     // Brands
     'marken.title': { en: 'Our Brands', de: 'Unsere Marken' },
     'marken.sub': {
-      en: 'AI you own, understand, and control: resilient, traceable, sovereign. hcai and 3cors are registered trademarks of hcai42, backed by a real company you can rely on for the long term.',
-      de: 'KI, die Sie besitzen, verstehen und kontrollieren: resilient, nachvollziehbar, souverän. hcai und 3cors sind eingetragene Marken von hcai42, getragen von einem realen Unternehmen, auf das Sie langfristig bauen können.'
+      en: 'Two products, one principle: AI you own, understand, and control. Backed by a real company you can rely on for the long term.',
+      de: 'Zwei Produkte, ein Prinzip: KI, die Sie besitzen, verstehen und kontrollieren. Getragen von einem realen Unternehmen, auf das Sie langfristig bauen können.'
     },
     'marken.hcai.desc': {
       en: 'Our AI framework: a structured method for bringing AI into business safely, with governance and human oversight at its core.',
