@@ -680,3 +680,15 @@ body {
     align-items: center;
   }
 }
+
+/* Sales story 2026-11-25: scenarios + USP tags */
+.scenario-card { text-align: left; }
+.scenario-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; opacity: .7; margin-bottom: .5rem; }
+.usp-tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+.usp-tag { display: inline-block; font-size: .8rem; font-weight: 600; padding: .25rem .7rem; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+.usp-team { color: #7fb3ff; border-color: #7fb3ff55; background: #7fb3ff14; }
+.usp-cost { color: #6fd3a0; border-color: #6fd3a055; background: #6fd3a014; }
+.usp-data { color: #c9a7ff; border-color: #c9a7ff55; background: #c9a7ff14; }
+.usp-free { color: #ffc46b; border-color: #ffc46b55; background: #ffc46b14; }
+.teaser-line { margin-top: 2rem; text-align: center; font-style: italic; opacity: .8; }
+.teaser-line a { color: inherit; text-decoration: underline; }
