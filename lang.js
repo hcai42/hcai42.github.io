@@ -1,6 +1,41 @@
 // hcai42 i18n - browser language detection + toggle
 (function() {
   var t = {
+    // Sales story 2026-11-25
+    'scen.title': { en: 'Example scenarios', de: 'Beispielszenarien' },
+    'scen.sub': { en: 'Always the same pattern: the business describes, the team works together, costs stay within limits, and the change ships without a release queue.', de: 'Immer derselbe Ablauf: Der Fachbereich beschreibt, das Team arbeitet gemeinsam, die Kosten bleiben im Rahmen, die Änderung kommt ohne Release-Warteschlange.' },
+    'scen.a.label': { en: 'Example scenario · Insurance', de: 'Beispielszenario · Versicherung' },
+    'scen.a.quote': { en: '"Our core system ships two releases a year."', de: '„Unser Kernsystem hat zwei Releases im Jahr.“' },
+    'scen.a.body': { en: 'The claims team wants to handle a new claim type faster. Claims handlers and the team lead describe the process in a guided interview; handlers propose changes, the lead approves. The new flow runs alongside the core system, which stays untouched. If the assessor service changes later or the AI provider goes down, rules and data stay; only the connection is switched.', de: 'Die Schadenabteilung will eine neue Schadenart schneller bearbeiten. Sachbearbeitung und Fachleitung beschreiben die Meldestrecke im geführten Interview; die Sachbearbeitung schlägt Änderungen vor, die Fachleitung gibt frei. Die neue Strecke läuft neben dem Kernsystem, das unverändert bleibt. Wechselt später der Gutachterdienst oder fällt der KI-Anbieter aus, bleiben Prüfregeln und Daten, umgestellt wird nur die Anbindung.' },
+    'scen.a.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-free">No lock-in</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-free">Kein Lock-in</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'scen.b.label': { en: 'Example scenario · Property management', de: 'Beispielszenario · Hausverwaltung' },
+    'scen.b.quote': { en: '"Every small change means a quote from our software vendor."', de: '„Jede kleine Anpassung ist ein Angebot vom Softwarehersteller.“' },
+    'scen.b.body': { en: 'Defect reports arrive by email, phone and paper notes. Property managers, accounting and contractor dispatch agree on report types and who decides. AI routes the reports; people decide. The team adds new report types itself; if a contractor closes down, only the routing changes.', de: 'Mängel kommen per Mail, Telefon und Zettel. Objektbetreuung, Buchhaltung und Handwerker-Disposition legen gemeinsam fest, welche Meldearten es gibt und wer entscheidet. Die KI ordnet Meldungen zu, entscheiden tun Menschen. Neue Meldearten legt der Fachbereich selbst an; hört ein Handwerksbetrieb auf, wird nur die Zuordnung angepasst.' },
+    'scen.b.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-free">No lock-in</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-free">Kein Lock-in</span>' },
+    'scen.c.label': { en: 'Example scenario · Plant engineering', de: 'Beispielszenario · Anlagenbau' },
+    'scen.c.quote': { en: '"When Mr M. is on holiday, no quote goes out."', de: '„Wenn Herr M. im Urlaub ist, geht kein Angebot raus.“' },
+    'scen.c.body': { en: 'Quotes with engineering content depend on a few people. Sales, engineering and installation planning capture rules and experience together. AI drafts the quote and shows what it relies on; engineering reviews and approves. If a supplier discontinues a material, the alternative is recorded once and applies to all future drafts.', de: 'Angebote mit Engineering-Anteil hängen am Wissen weniger Köpfe. Vertrieb, Engineering und Montageplanung legen Regeln und Erfahrungswerte gemeinsam ab. Die KI erstellt einen Angebotsentwurf und zeigt, worauf er sich stützt; das Engineering prüft und gibt frei. Stellt ein Zulieferer einen Werkstoff ein, wird die Alternative einmal hinterlegt und gilt für alle künftigen Entwürfe.' },
+    'scen.c.tags': { en: '<span class="usp-tag usp-team">Together in one workspace</span> <span class="usp-tag usp-cost">Costs within limits</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-team">Gemeinsam im Workspace</span> <span class="usp-tag usp-cost">Kosten im Rahmen</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'change.title': { en: 'Partners change. Your business keeps running.', de: 'Partner wechseln. Ihr Geschäft läuft weiter.' },
+    'change.desc': { en: 'An AI provider goes down, a supplier discontinues a product, a service partner ends the contract. Your processes, rules and experience belong to you, not to the partner. You replace the partner; your team\'s know-how stays. Switching AI providers is a configuration change.', de: 'Ein KI-Anbieter fällt aus, ein Lieferant stellt ein Produkt ein, ein Dienstleister kündigt den Vertrag. Ihre Abläufe, Regeln und Erfahrungswerte gehören Ihnen, nicht dem Partner. Sie tauschen den Partner aus, das Wissen Ihres Fachbereichs bleibt. Den KI-Anbieter wechseln Sie per Konfiguration.' },
+    'change.tags': { en: '<span class="usp-tag usp-free">No lock-in</span> <span class="usp-tag usp-data">Your data stays yours</span>', de: '<span class="usp-tag usp-free">Kein Lock-in</span> <span class="usp-tag usp-data">Ihre Daten bleiben Ihre</span>' },
+    'teaser.text': { en: 'In conversation and projects with: a tour operator, an insurance IT service provider, a plant engineering company, an online education entrepreneur.', de: 'Im Gespräch und in Projekten mit: einem Reiseveranstalter, einem IT-Dienstleister für Versicherungen, einem Anlagenbauer, einer Online-Bildungsunternehmerin.' },
+    'pain.title': { en: 'Sound familiar?', de: 'Kennen Sie das?' },
+    'pain.1': { en: 'Every business change turns into an IT project: ticket, quote, queue.', de: 'Jede fachliche Änderung wird ein IT-Projekt: Ticket, Angebot, Warteschlange.' },
+    'pain.2': { en: 'Your standard software sets the pace, not your business.', de: 'Die Standardsoftware gibt den Takt vor, nicht Ihr Geschäft.' },
+    'pain.3': { en: 'Knowledge about your processes sits with vendors, not with you.', de: 'Das Wissen über Ihre Prozesse liegt bei Dienstleistern, nicht bei Ihnen.' },
+    'pain.4': { en: 'AI stays stuck in pilots because cost, data and operations are unresolved.', de: 'KI bleibt im Pilot stecken, weil Kosten, Daten und Betrieb ungeklärt sind.' },
+    'pain.5': { en: 'A vendor, supplier or partner changes prices or terms, or drops out, and suddenly a whole process stops.', de: 'Ein Anbieter, Lieferant oder Partner ändert Preise, Bedingungen oder fällt aus, und plötzlich steht ein ganzer Prozess.' },
+    'tun.title': { en: 'What we do', de: 'Was wir tun' },
+    'tun.sub': { en: 'We bring business experts and IT to one table, so the business sets the pace.', de: 'Wir bringen Fachbereich und IT an einen Tisch, damit die Fachlichkeit das Tempo bestimmt.' },
+    'tun.1.title': { en: 'Clarify the domain', de: 'Fachlichkeit klären' },
+    'tun.1.desc': { en: 'We capture processes, terms and rules with your experts, in their language.', de: 'Wir nehmen Abläufe, Begriffe und Regeln mit Ihren Fachleuten auf, in deren Sprache.' },
+    'tun.2.title': { en: 'Expose dependencies', de: 'Abhängigkeiten sichtbar machen' },
+    'tun.2.desc': { en: 'Where do standard software, vendors, partners or interfaces slow you down?', de: 'Wo bremsen Standardsoftware, Dienstleister, Partner oder Schnittstellen?' },
+    'tun.3.title': { en: 'Build independence', de: 'Eigenständigkeit aufbauen' },
+    'tun.3.desc': { en: 'Business applications on 3cors, a framework you own. Your team learns along and takes over.', de: 'Fachanwendungen auf 3cors, einem Framework, das Ihnen gehört. Ihr Team lernt mit und übernimmt.' },
+    'nav.szenarien': { en: 'Examples', de: 'Beispiele' },
+
     // Nav
     'nav.leitbild': { en: 'Mission', de: 'Leitbild' },
     'nav.werte': { en: 'Values', de: 'Werte' },
@@ -13,12 +48,9 @@
       en: 'Independent company · Built in Germany · Full data sovereignty',
       de: 'Unabhängiges Unternehmen · Made in Germany · Volle Datensouveränität'
     },
-    'hero.title': { en: 'We build AI you actually own.', de: 'Wir bauen KI, die dir wirklich gehört.' },
-    'hero.sub': {
-      en: 'hcai42 is the company behind 3cors. We build AI software that organisations own, understand, and control. Full sovereignty, zero lock-in.',
-      de: 'hcai42 ist das Unternehmen hinter 3cors. Wir bauen KI-Software, die Unternehmen besitzen, verstehen und kontrollieren. Volle Souveränität, kein Lock-in.'
-    },
-    'hero.cta1': { en: 'Read our Mission', de: 'Leitbild lesen' },
+    'hero.title': { en: 'IT that follows the business.', de: 'IT, die dem Fachbereich folgt.' },
+    'hero.sub': { en: 'We bring business experts and IT to one table, so your organisation can decide and act faster, with less dependence on external vendors and software release cycles.', de: 'Wir bringen Fachbereich und IT an einen Tisch. Damit Ihr Geschäft schneller entscheiden und umsetzen kann, mit weniger Abhängigkeit von externen Dienstleistern und Software-Releases.' },
+    'hero.cta1': { en: 'How we work', de: 'So arbeiten wir' },
     'hero.cta2': { en: 'Get in Touch', de: 'Kontakt aufnehmen' },
 
     // Credibility / Metrics
